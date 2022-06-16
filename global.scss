@@ -1,0 +1,31 @@
+@import 'scss/variables';
+@import 'scss/layout';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    a{
+        font-size: 16px;
+        color: $gray;
+    }
+    .nav-item-purple{
+        color: $light-purple;
+    }
+    .nav-item-purple::before{
+        border-bottom: 1px solid $dark-purple;
+        width: 30%;
+    }
+    button{
+        background-color: $purple;
+        color: white;
+        border-radius: 40px;
+        padding:3% 10%;
+        border: none;
+    }
+    .setting-nav::before{
+        content: '';
+        border-left: 2px solid solid;
+    }
+}
