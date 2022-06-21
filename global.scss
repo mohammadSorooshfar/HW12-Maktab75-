@@ -1,5 +1,6 @@
 @import 'scss/variables';
 @import 'scss/layout';
+@import 'scss/mixins';
 *{
     margin: 0;
     padding: 0;
@@ -28,4 +29,151 @@ nav{
         content: '';
         border-left: 2px solid solid;
     }
+}
+.btn-green{
+    color:white;
+    background-color: $greenBtn;
+    border: none;
+    border-radius: 28px;
+    padding: 10px 15px;
+    font-size: 24px;
+}
+.btn-learn-more{
+    color: $purple;
+    background-color: transparent;
+    border: none;
+    padding: 10px 15px;
+    font-size: 24px;
+}
+h1{
+    font-size: 48px;
+}
+p{
+    font-size: 32px;
+}
+.purple-business-div{
+    border: 1px solid $purple;
+    border-radius: 60px;
+}
+.text-purple{
+    color: $dark-purple;
+}
+.text-gray{
+    color: $gray;
+}
+.background-top{
+    position: absolute;
+    z-index: -1;
+    top: 420px;
+}
+.line-between-counters{
+    
+background:rgba(0, 0, 0, 0.12);
+width: 2px;
+height: 93px;
+}
+.feature-section-top-div{
+    p::before{
+            content: '';
+            width: 65px;
+            height: 12px;
+            display: block;
+            margin-bottom: 30px;
+            border-radius: 17px;
+            background: $purple;
+        }
+} 
+.feature-section-middle-div{
+    p::before{
+        content: '';
+        width: 65px;
+        height: 12px;
+        display: block;
+        margin-bottom: 30px;
+        margin-left: 85%;
+        border-radius: 17px;
+        background: $purple;
+    }
+}
+.feature-section-bottom-div{
+    p::before{
+        content: '';
+        width: 65px;
+        height: 12px;
+        display: block;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        margin-left: 45%;
+        border-radius: 17px;
+        background: $purple;
+    }
+}
+.background-features{
+    position: absolute;
+    top: 1050px;
+}
+.integration-titles-div{
+    .purple-border-title{
+        width: 65px;
+        height: 12px;
+        margin:5% 0;
+        border-radius: 17px;
+        background: $purple;
+    }
+    .green-border-titles{
+        width: 7px;
+        height: 200px;
+        border-radius: 5px;
+        background: $greenLine;
+    }
+}
+.green-border-options{
+    width: 8px;
+    height: 800px;
+    border-radius: 5px;
+    background: $greenLine;
+    margin-top: 1%;
+}
+.image-circle-bg-left{
+    width: 20%;
+    border-radius: 55%;
+    background-color: white;
+    box-shadow: 1px 1px 8px #ccc;
+    margin-left: 15%;
+    padding: 3%;
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.image-circle-bg-right{
+    width: 20%;
+    border-radius: 55%;
+    background-color: white;
+    box-shadow: 1px 1px 8px #ccc;
+    margin-left: 5%;
+    margin-right: 10%;
+    padding: 3%;
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.right-content-first::before{
+    @include before-dots($greenBtn);
+}
+.right-content-second::before{
+    @include before-dots($dark-purple);
+}
+.right-content-third::before{
+    @include before-dots($orange);
+}
+.left-content-first::after{
+    @include after-dots($dark-purple);
+}
+.left-content-second::after{
+    @include after-dots($orange);
+}
+.left-content-third::after{
+    @include after-dots($greenBtn);
 }

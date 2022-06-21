@@ -13,11 +13,59 @@
 .w-50{
     width: 50%;
 }
+.w-40{
+    width: 40%;
+}
 .w-20{
     width: 20%;
 }
+.p-2{
+    padding:2%;
+}
+.px-5{
+    padding: 0 5%;
+}
+.px-10{
+    padding: 0 10%;
+}
+.py-5{
+    padding: 5% 0;
+}
+.py-10{
+    padding: 10% 0;
+}
+.mt-5{
+    margin-top: 5%;
+}
+.mt-10{
+    margin-top: 10%;
+}
+.mt-20{
+    margin-top: 20%;
+}
+.ml-5{
+    margin-left: 5%;
+}
+.fs-18{
+    font-size: 18px;
+}
+.fs-24{
+    font-size: 24px;
+}
+.fs-28{
+    font-size: 28px;
+}
+.fs-32{
+    font-size: 32px;
+}
+.fs-48{
+    font-size: 48px;
+}
 .flex{
     display: flex;
+}
+.columns{
+    flex-direction: column;
 }
 .justify-center{
     justify-content: center;
@@ -27,4 +75,13 @@
 }
 .align-center{
     align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
 }
