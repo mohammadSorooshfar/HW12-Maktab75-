@@ -175,8 +175,8 @@ async function deleteEvent(e) {
   await deleteFromApi(e.target.closest("tr").id);
   e.target.closest("tr").remove();
   let trs = document.getElementsByTagName("tr");
-  if (trs.length == 5) {
-    await postToApi(15);
+  if (trs.length == 3) {
+    await postToApi(10);
   }
   if (trs.length < 2) {
     document.getElementsByTagName("table")[0].remove();
