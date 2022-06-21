@@ -60,7 +60,6 @@ function makeData(count) {
   console.log(dataArray);
   return dataArray;
 }
-makeData(3);
 async function postToApi(count) {
   let data = makeData(count);
   data.forEach(async (element) => {
