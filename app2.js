@@ -247,7 +247,6 @@ async function start() {
   let data = await getFromApi();
   await tableCreate(data);
 }
-start();
 function tableSort(array, table) {
   let allTrs = document.getElementsByTagName("tr");
   let lengthOfTrs = allTrs.length;
@@ -285,3 +284,4 @@ function tableSort(array, table) {
     }
   }
 }
+start();
